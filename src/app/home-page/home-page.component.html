@@ -1,24 +1,13 @@
-<!-- <div class="container-fluid px-0" style="overflow-x: hidden;">
-    <div class="row">
-        <div class="col-12"> -->
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <!-- <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Company name</a> -->
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse"
         data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search"
-                    aria-label="Search"> -->
-    <!-- <ul class="navbar-nav px-3">
-                    <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="#">Sign out</a>
-                    </li>
-                </ul> -->
 </nav>
 
 <div class="container-fluid">
     <div class="row">
-        <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block bg-light sidebar collapse hide-top">
             <div class="position-sticky pt-3">
                 <ul class="nav flex-column mx-auto flex-md-wrap">
                     <li class="nav-item" style="color: black; font-weight: bold;">
@@ -36,8 +25,8 @@
                 </ul>
 
                 <h6 class="sidebar-heading d-flex justify-content-between align-items-center mt-4 mb-1">
-                    <h1>
-                        <a class="link-secondary h1_links" href="#" aria-label="Add a new report">
+                    <h1 class="mx-auto">
+                        <a class="link-dark h1_links" routerLink="/home" aria-label="Add a new report">
                             Matthew God'stime
                         </a>
                     </h1>
@@ -53,17 +42,17 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">
+                            <a class="nav-link link" href="#about">
                                 About
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">
+                            <a class="nav-link link" href="#education">
                                 Education
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">
+                            <a class="nav-link link" href="#interest">
                                 Interest
                             </a>
                         </li>
@@ -106,50 +95,19 @@
         </nav>
 
         <main class="col-md-9 ml-sm-auto col-lg-9 main">
-            <!-- <div
-                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                            <h1 class="h2">Dashboard</h1>
-                            <div class="btn-toolbar mb-2 mb-md-0">
-                                <div class="btn-group mr-2">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                                </div>
-                                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                                    <span data-feather="calendar"></span>
-                                    This week
-                                </button>
-                            </div>
-                        </div> -->
-
-            <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-indicators doy">
+                <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="../../assets/images/Pencil.38828042.jpg" class="d-block w-100" alt="...">
-                        <div class="project-wrapper">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5><i>I LOVE BUILDING THINGS!!</i></h5>
-                                <p class="projects"><a routerLink="/projects">VIEW PROJECTS</a><svg
-                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 15 16"
-                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z">
-                                        </path>
-                                    </svg></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="3000">
-                        <img src="../../assets/images/Hello.ce9b13e5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../../assets/images/Hello.ce9b13e5.jpg" class="d-block w-100 carousel-img" alt="...">
                         <div class="cv-wrapper">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>I'm God'stime</h5>
+                            <div class="carousel-caption mx-auto mb-lg-5">
+                                <h5><i>I'm God'stime</i></h5>
                                 <p class="cv">
                                     <a href="https://drive.google.com/file/d/1jcmNZIV6eo4HRyV-JI7cWxWmF_TQfQZi/view?usp=sharing"
                                         rel="opener noreferrer" target="_blank">VIEW CV <svg stroke="currentColor"
@@ -163,12 +121,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                        <img src="../../assets/images/Pencil.38828042.jpg" class="d-block w-100 carousel-img" alt="...">
+                        <div class="project-wrapper ">
+                            <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+                                <h5><i>I LOVE BUILDING THINGS!!</i></h5>
+                                <p class="projects"><a routerLink="/projects">VIEW PROJECTS<svg class="ms-3"
+                                            stroke="currentColor" fill="currentColor" stroke-width="0"
+                                            viewBox="0 0 15 16" height="1em" width="1em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z">
+                                            </path>
+                                        </svg></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="table-responsive">
                 <section>
-                    <div class="about">
+                    <div class="about" id="about">
                         <span class="sec">ABOUT ME</span>
                         <h2 class="intro">WHO AM I?</h2>
                         <p class="desp">My name is <b>Matthew God'stime</b> and I am currently working as
@@ -185,12 +160,12 @@
                             line of code I write more readable, accessible, and modular.</p>
                     </div>
 
-                    <div class="experties"></div>
+                    <div id="interest"></div>
                     <span class="sec">WHAT DO I DO</span>
                     <h2 class="intro">HERE ARE SOME OF MY EXPERTISE</h2>
 
                     <div class="row Interest_Interest__1nrKb mx-auto">
-                        <div class="col-sm col-md-9 col-lg-4 mx-auto py-5">
+                        <div class="col-9 col-md-9 col-lg-4 mx-auto py-5">
                             <div class="card mb-3 text-center Interest_web__34oC7">
                                 <div class="card-body">
                                     <h5 class="card-title">APP DEVELPOMENT</h5>
@@ -201,7 +176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-9 col-lg-4 mx-auto py-5">
+                        <div class="col-9 col-md-9 col-lg-4 mx-auto py-5">
                             <div class="card mb-3 text-center Interest_app__bEJ73">
                                 <div class="card-body">
                                     <h5 class="card-title">WEB DEVELPOMENT</h5>
@@ -211,7 +186,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm col-md-9 col-lg-4 mx-auto py-5">
+                        <div class="col-9 col-md-9 col-lg-4 mx-auto py-5">
                             <div class="card mb-3 text-center Interest_other__2P7kx">
                                 <div class="card-body">
                                     <h5 class="card-title">OTHER'S INTEREST</h5>
@@ -224,8 +199,97 @@
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
-                        
+                    <div class="col mx-4">
+                        <section>
+                            <span class="sec" id="education">MY JOURNEY</span>
+                            <article class="edu-wrapper">
+                                <div class="Education_timeline_icon__3fqWJ Education_timeline_icon_5__1jvkG"><svg
+                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center mt-3" style="height: 140px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+
+                                <div class="Education_label__WMsfh">
+                                    <h2>Experience <span>July(2021)-Present</span></h2>
+                                    <p>I am currently working as <b>Software Developer Engineer</b> at <a
+                                            target="_blank" href="https://www.springworks.in/"><b>Springworks</b></a>
+                                        <i>(previously Springrole and Springworks is a
+                                            HR
+                                            technology startup that is building tools and products to simplify
+                                            recruiting and help organizations
+                                            engage
+                                            and
+                                            retain their employees)</i> and boosting my professional skills.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="edu-wrapper">
+                                <div class="Education_timeline_icon__3fqWJ"><svg stroke="currentColor"
+                                        fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center mt-3" style="height: 95px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                                <div class="Education_label__WMsfh">
+                                    <h2>Undergraduation at SLIET <span>2017-2021</span></h2>
+                                    <p>I completed my undergraduation in CSE (Computer Science and Engineering) from <a
+                                            href="http://sliet.ac.in/">SLIET</a> with overall 82.71%.</p>
+                                </div>
+                            </article>
+
+                            <article class="edu-wrapper">
+                                <div class="Education_timeline_icon__3fqWJ Education_timeline_icon_2__2jgeY"><svg
+                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 224v272c0 8.84 7.16 16 16 16h80V192H32c-17.67 0-32 14.33-32 32zm360-48h-24v-40c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v64c0 4.42 3.58 8 8 8h48c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zm137.75-63.96l-160-106.67a32.02 32.02 0 0 0-35.5 0l-160 106.67A32.002 32.002 0 0 0 128 138.66V512h128V368c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v144h128V138.67c0-10.7-5.35-20.7-14.25-26.63zM320 256c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm288-64h-64v320h80c8.84 0 16-7.16 16-16V224c0-17.67-14.33-32-32-32z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center mt-3" style="height: 95px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                                <div class="Education_label__WMsfh">
+                                    <h2>Higher Education <span>2014-2016</span></h2>
+                                    <p>I have completed my higher education from HKIS with major subjects as
+                                        Physics,Chemistry &amp; Maths with
+                                        85% merit in CBSE board. </p>
+                                </div>
+                            </article>
+
+                            <article class="edu-wrapper">
+                                <div class="Education_timeline_icon__3fqWJ Education_timeline_icon_4__17c3E"><svg
+                                        stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z">
+                                        </path>
+                                    </svg>
+                                    <div class="d-flex justify-content-center mt-3" style="height: 95px;">
+                                        <div class="vr"></div>
+                                    </div>
+                                </div>
+                                <div class="Education_label__WMsfh">
+                                    <h2>Internship</h2>
+                                    <p>Completed one month Internship in React Js with Internity Foundation</p>
+                                </div>
+                                <div class="Education_timeline_entry_inner__3uKYG">
+                                    <div class="Education_timeline_icon_3__2Rer7"></div>
+                                </div>
+                            </article>
+                        </section>
                     </div>
 
                 </section>
@@ -233,10 +297,3 @@
         </main>
     </div>
 </div>
-
-
-
-
-<!-- </div>
-    </div>
-</div> -->

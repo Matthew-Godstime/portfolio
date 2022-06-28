@@ -11,20 +11,7 @@
               .bd-placeholder-img-lg {
                   font-size: 3.5rem;
               }
-              /* .card-wrapper {
-                margin: 0 auto !important;
-                text-align: center;
-              } */
           }
-
-          /* @media (max-width: 768px) {
-                            .project-wrapper {
-                                    position: absolute;
-                                    left: 55%;
-                                    top: 70%;
-                                    padding: 0 2em;
-                                }
-                  } */
 
           body {
               font-size: .875rem;
@@ -45,15 +32,20 @@
               left: 0;
               z-index: 100;
               /* Behind the navbar */
-              padding: 48px 0 0;
+              padding: 0;
               /* Height of navbar */
               box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
           }
 
           @media (max-width: 767.98px) {
-              .sidebar {
+              /* .sidebar {
                   top: 5rem;
+              } */
+
+              .carousel-img {
+                  height: 105vh;
               }
+
           }
 
           .sidebar-sticky {
@@ -127,7 +119,6 @@
               background-color: #f2f3f7;
               overflow-y: scroll;
               text-align: center;
-              /* justify-content: center; */
           }
 
           .rounded-circle {
@@ -141,7 +132,6 @@
           .h1_links {
               text-decoration: none;
               font-family: Aclonica, sans-serif;
-              color: #000;
               font-size: 32px;
           }
 
@@ -172,9 +162,7 @@
           }
 
           .main {
-              /* margin: 0 !important; */
               padding: 0 !important;
-              /* width: 100% !important; */
           }
 
           #carouselExampleFade {
@@ -182,26 +170,25 @@
           }
 
           .carousel-caption {
-              width: 50em !important;
               text-align: end;
               height: auto !important;
+              word-break: break-all;
           }
 
-          .carousel-caption h5,
-          .cv-wrapper h5 {
-              font-size: 2.5rem;
+          .carousel-caption h5 {
+              font-size: 2em;
               margin-bottom: .5rem;
               font-weight: 700;
-              line-height: 1.2;
+              line-height: 1.5em;
+              word-spacing: 5px;
               font-family: Permanent Marker, cursive;
-              width: 50%;
               color: #000;
           }
 
           .projects {
-              width: 220px;
-              margin: 50px;
-              font-size: 1.1rem;
+              width: 230px;
+              margin: 50px auto 0;
+              text-align: center;
               font-weight: 700;
               font-family: Permanent Marker, cursive;
               /* -webkit-animation-name: CarouselImages_text__1lDBD;
@@ -210,9 +197,9 @@
               animation-duration: 1s;
               -webkit-animation-timing-function: ease-out;
               animation-timing-function: ease-out; */
-              position: relative;
+              /* position: relative;
               top: 20px;
-              left: 80px;
+              left: 80px; */
               color: hsla(0, 0%, 100%, .8);
               padding: 11px 24px;
               box-shadow: 0 10px 30px 0 rgba(21, 10, 82, .35);
@@ -221,31 +208,31 @@
               background-image: linear-gradient(270deg, rgba(75, 19, 79, .8), rgba(201, 75, 75, .6));
           }
 
-          .project-wrapper {
-              position: absolute;
-              left: 55%;
-              top: 75%;
+          .projects a,
+          .cv a {
+              font-size: 1.1rem;
+          }
+
+
+          .project-wrapper .carousel-caption {
+              width: 19em !important;
           }
 
           .cv-wrapper h5 {
               color: hsla(0, 0%, 100%, .8);
-              margin-left: 17%;
+              text-align: center;
           }
 
           .cv {
               width: 150px;
-              margin: 50px auto;
-              font-size: 1.1rem;
+              margin: 25px auto 0;
               font-family: Permanent Marker, cursive;
-              -webkit-animation-name: CarouselImages_text__1lDBD;
+              /* -webkit-animation-name: CarouselImages_text__1lDBD;
               animation-name: CarouselImages_text__1lDBD;
               -webkit-animation-duration: 1s;
               animation-duration: 1s;
               -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-              /* position: relative;
-                    top: 20px;
-                    left: 20%; */
+              animation-timing-function: ease-out; */
               color: hsla(0, 0%, 100%, .8);
               padding: 11px 24px;
               box-shadow: 0 10px 30px 0 rgba(21, 10, 82, .35);
@@ -260,7 +247,6 @@
               color: #555;
               margin-bottom: 20px;
               font-size: 11px;
-              /* margin: 3em 0; */
           }
 
           .sec,
@@ -285,10 +271,6 @@
 
           }
 
-          /* .Interest_box__1QXKR {
-              margin: 50px 15px 15px;
-              border-radius: 6px;
-          } */
           .Interest_Interest__1nrKb {
               width: 95%;
           }
@@ -305,13 +287,6 @@
               padding: 1.2rem;
               box-shadow: 0 0 56px -8px rgba(0, 0, 0, .17);
           }
-
-          /* div>h3 {
-              font-size: 16px;
-              font-weight: 900;
-              text-transform: uppercase;
-              margin: 20px 0 30px;
-          } */
 
           div>p {
               font-size: 15px;
@@ -332,10 +307,10 @@
           }
 
           .Interest_app__bEJ73 {
-                        border: 1px #000;
-                            border-bottom: 2px solid #f9bf3f;
-                            position: relative;
-                            top: -20px;
+              border: 1px #000;
+              border-bottom: 2px solid #f9bf3f;
+              position: relative;
+              top: -20px;
           }
 
           .Interest_other__2P7kx {
@@ -344,11 +319,77 @@
           }
 
           .my-wrapper {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            overflow: hidden;
-            word-break: break-all;
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              overflow: hidden;
+              word-break: break-all;
+          }
+
+          .edu-wrapper {
+              margin-bottom: 10px;
+              clear: both;
+          }
+
+          .Education_timeline_icon_5__1jvkG {
+              background: #0ff;
+          }
+
+          .Education_timeline_icon__3fqWJ {
+              display: block;
+              width: 40px;
+              font-size: 20px;
+              height: 40px;
+              background-color: #f9bf3f;
+              border-radius: 50%;
+              text-align: center;
+              box-shadow: 0 0 0 5px #f2f3f7;
+              line-height: 35px;
+              float: left;
+          }
+
+          .Education_label__WMsfh {
+              position: relative;
+              background: #f2f3f7;
+              padding: 1.5em;
+              margin-left: 60px;
+          }
+
+          .Education_label__WMsfh a {
+            color: #000;
+          }
+
+          .Education_label__WMsfh h2 {
+              font-size: 20px;
+              font-family: Quicksand, Arial, sans-serif;
+              font-weight: 500;
+              margin: 0 0 30px;
+              color: #000;
+          }
+
+          .Education_label__WMsfh h2 span {
+              -webkit-opacity: .4;
+              -moz-opacity: .4;
+              opacity: .4;
+              -ms-filter: alpha(opacity=40);
+              filter: alpha(opacity=40);
+              font-size: 16px;
+          }
+
+          .Education_label__WMsfh p {
+              margin-bottom: 1.5em;
+          }
+
+          .animated {
+              visibility: visible !important;
+          }
+
+          .hide-on-init {
+              visibility: hidden;
+          }
+          .vr {
+            width: 3px;
+            opacity: .1;
           }
